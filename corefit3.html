@@ -206,7 +206,7 @@
       `;
     }
     app.innerHTML = `
-      <h1>SEXFit – Kraft, Libido & Ausdauer</h1>
+      <h1>CoreFit+ Training</h1>
       ${renderNav()}
       <div class="content">${content}</div>
     `;
@@ -255,7 +255,7 @@
     const blob = new Blob([text], {type: 'text/plain'});
     const a = document.createElement('a');
     a.href = URL.createObjectURL(blob);
-    a.download = `sexfit_training_${now.toISOString().slice(0,10)}.txt`;
+    a.download = `corefit_training_${now.toISOString().slice(0,10)}.txt`;
     a.click();
     URL.revokeObjectURL(a.href);
 
